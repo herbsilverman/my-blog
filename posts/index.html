@@ -12,7 +12,7 @@ background: '/img/bg-post.jpg'
     {% if post.subtitle %}
     <p class="post-subtitle">{{ post.subtitle }}</p>
     {% else %}
-    <p class="post-subtitle">{{ post.excerpt | strip_html | truncatewords: 30 }}</p>
+    <p class="post-subtitle">{{ post.excerpt | strip_html | truncatewords: 48 }}</p>
     {% endif %}
   </a>
   <p class="post-meta">Posted by
