@@ -2,8 +2,8 @@ title:              Herb Silverman
 email:              silvermanh@gmail.com
 description:        Life Lessons Learned
 author:             Herb Silverman
-baseurl:            ""  # Remove "/startbootstrap-clean-blog-jekyll" unless it is inside a subfolder
-url:                "https://herbsilverman.github.io"
+baseurl:            "/startbootstrap-clean-blog-jekyll"
+url:                "https://startbootstrap.github.io"
 
 # Social Profiles
 twitter_username:   
