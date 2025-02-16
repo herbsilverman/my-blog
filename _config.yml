@@ -2,15 +2,15 @@ title:              Herb Silverman
 email:              silvermanh@gmail.com
 description:        Life Lessons Learned
 author:             Herb Silverman
-baseurl:            "/startbootstrap-clean-blog-jekyll"
-url:                "https://startbootstrap.github.io"
+baseurl:            ""  # Remove "/startbootstrap-clean-blog-jekyll" unless it is inside a subfolder
+url:                "https://herbsilverman.github.io"
 
 # Social Profiles
-twitter_username:   SBootstrap
-github_username:    StartBootstrap
-facebook_username:  StartBootstrap
+twitter_username:   
+github_username:    herbsilverman
+facebook_username:  herb.silverman.5
 instagram_username:  
-linkedin_username:
+linkedin_username:  herbsilverman
 
 # Add your google-analytics ID here to activate google analytics
 google_analytics:   UA-XXXXXXXXX-X # out your google-analytics code
