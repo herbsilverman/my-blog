@@ -1,2 +1,20 @@
-// Import Core Clean Blog SCSS
-@import "../assets/vendor/startbootstrap-clean-blog/scss/styles.scss";
+// Import Google Fonts
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+// Global Body Font
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+// Specific Font for Headings
+h1, h2, h3 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+}
+
+// Font for Paragraphs
+p {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+}
+
