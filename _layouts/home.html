@@ -23,7 +23,17 @@ layout: default
     </div>
   </header>
 
-  <div class="container">
+<p class="post-meta">Posted by
+            {% if post.author %}
+            {{ post.author }}
+            {% else %}
+            {{ site.author }}
+            {% endif %}
+            on
+            {{ post.date | date: '%B %d, %Y' }} &middot; {% include read_time.html content=post.content %}            
+</p>
+  
+<div class="container">
     <div class="row">
       <div class="col-lg-8 col-md-10 mx-auto">
 
@@ -39,16 +49,8 @@ layout: default
             <p>{{ post.excerpt }}</p>
               <a href="{{ post.url | relative_url }}" class="read-more">Read More</a>
           </div>
-          <p class="post-meta">Posted by
-            {% if post.author %}
-            {{ post.author }}
-            {% else %}
-            {{ site.author }}
-            {% endif %}
-            on
-            {{ post.date | date: '%B %d, %Y' }} &middot; {% include read_time.html content=post.content %}            
-          </p>
-        </article>
+	</article>
+
 
         <hr>
 
