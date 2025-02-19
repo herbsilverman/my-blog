@@ -41,6 +41,10 @@ layout: default
             <p class="post-excerpt">{{ post.excerpt | strip_html | truncatewords: 48 }}</p>
             {% endif %}
           </a>
+          <div class="post-excerpt">
+            {{ post.excerpt }}
+              <a href="{{ post.url | relative_url }}" class="read-more">Continue Reading</a>
+          </div>
           <p class="post-meta">Posted by
             {% if post.author %}
             {{ post.author }}
