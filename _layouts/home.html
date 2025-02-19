@@ -22,16 +22,6 @@ layout: default
       </div>
     </div>
   </header>
-
-<p class="post-meta">Posted by
-            {% if post.author %}
-            {{ post.author }}
-            {% else %}
-            {{ site.author }}
-            {% endif %}
-            on
-            {{ post.date | date: '%B %d, %Y' }} &middot; {% include read_time.html content=post.content %}            
-</p>
   
 <div class="container">
     <div class="row">
@@ -41,16 +31,24 @@ layout: default
 
         <!-- Home Post List -->
         {% for post in site.posts limit : 5 %}
- <article class="post-preview">
+<article class="post-preview">
           <a href="{{ post.url | prepend: site.baseurl | replace: '//', '/' }}">
             <h2 class="post-title">{{ post.title }}</h2>
           </a>
+          <p class="post-meta">Posted by
+            {% if post.author %}
+            {{ post.author }}
+            {% else %}
+            {{ site.author }}
+            {% endif %}
+            on
+            {{ post.date | date: '%B %d, %Y' }} &middot; {% include read_time.html content=post.content %}            
+          </p>
           <div class="post-excerpt">
             <p>{{ post.excerpt }}</p>
-              <a href="{{ post.url | relative_url }}" class="read-more">Read More</a>
+              <a href="{{ post.url | relative_url }}" class="read-more">Read more</a>
           </div>
-	</article>
-
+        </article>
 
         <hr>
 
