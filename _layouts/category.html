@@ -1,9 +1,19 @@
 ---
 layout: default
 ---
-<h1>Posts in "{{ page.title }}"</h1>
-<ul>
-    {% for post in site.categories[page.title] %}
-        <li><a href="{{ post.url }}">{{ post.title }}</a></li>
-    {% endfor %}
-</ul>
+
+<!-- Category Page -->
+<div class="container">
+  <div class="row">
+    <div class="col-lg-8 col-md-10 mx-auto">
+      <h1>Category: {{ page.title }}</h1>
+      <ul>
+        {% for post in site.categories[page.category] %}
+          <li>
+            <a href="{{ post.url | relative_url }}">{{ post.title }}</a> - {{ post.date | date: "%B %d, %Y" }}
+          </li>
+        {% endfor %}
+      </ul>
+    </div>
+  </div>
+</div>
