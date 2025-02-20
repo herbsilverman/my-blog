@@ -10,6 +10,6 @@ category: thinking
 
 <!-- Here, you can list the posts that belong to this category -->
 <ul>
-  <li><a href="https://herbsilverman.github.io/startbootstrap-clean-blog-jekyll/thinking/2024/12/23/small-gestures.html)">Beyond Directions: Finding Meaning In Small Gestures</a></li>
+  <li><a href="/thinking/2024/12/23/small-gestures.html)">Beyond Directions: Finding Meaning In Small Gestures</a></li>
 </ul>
 
