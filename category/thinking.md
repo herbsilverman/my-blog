@@ -10,6 +10,6 @@ category: thinking
 
 <!-- Here, you can list the posts that belong to this category -->
 <ul>
-  <li><a href="/posts/small-gestures">Beyond Directions: Finding Meaning In Small Gestures</a></li>
+  <li><a href="/posts/category/small-gestures">Beyond Directions: Finding Meaning In Small Gestures</a></li>
 </ul>
 
