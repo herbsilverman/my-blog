@@ -5,7 +5,7 @@ permalink: /category/thinking/
 ---
 
 <h2>Thinking</h2>
-<p>Welcome to the Thinking category! Here, you'll find posts related to deep thoughts, personal reflections, and intellectual explorations.</p>
+<p>Thinking is a model everyone should adhere to create fantastic concepts. Hence, you will discover tidbits with the perception to act on your dreams and goals.</p>
 
 <!-- Here, you can list the posts that belong to this category -->
 <ul>
