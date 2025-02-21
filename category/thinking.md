@@ -2,7 +2,6 @@
 layout: default
 title: Thinking
 permalink: /category/thinking/
-category: thinking
 ---
 
 <h2>Thinking</h2>
