@@ -9,6 +9,6 @@ permalink: /category/thinking/
 
 <!-- Here, you can list the posts that belong to this category -->
 <ul>
-  <li><a href="/small-gestures">Beyond Directions: Finding Meaning In Small Gestures</a></li>
+  <li><a href="https://herbsilverman.github.io/startbootstrap-clean-blog-jekyll/category/thinking/small-gestures">Beyond Directions: Finding Meaning In Small Gestures</a></li>
 </ul>
 
