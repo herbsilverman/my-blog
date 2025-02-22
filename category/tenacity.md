@@ -9,5 +9,5 @@ permalink: /category/tenacity/
 
 <!-- Here, you can list the posts that belong to this category -->
 <ul>
-  <li><a href="https://herbsilverman.github.io/startbootstrap-clean-blog-jekyll/category/tenacity/business-energy-redefined/">Recharge, Refocus, Succeed: Business Energy Redefined</a></li>
+  <li><a href="https://herbsilverman.github.io/startbootstrap-clean-blog-jekyll/category/tenacity/business-energy-redefined">Recharge, Refocus, Succeed: Business Energy Redefined</a></li>
 </ul>
