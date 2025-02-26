@@ -7,7 +7,12 @@
 <body>
 
   {% include navbar.html %}
-
+  
+  <!-- Background Image -->
+  {% if page.background %}
+    <img class="fullscreen-img" src="{{ page.background }}" alt="{{ page.title }}">
+  {% endif %}
+  
   {{ content }}
 
   {% include footer.html %}
