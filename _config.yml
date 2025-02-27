@@ -28,3 +28,8 @@ plugins:
 collections:
   category:
     output: true
+
+# sass
+sass:
+  style: compressed
+
