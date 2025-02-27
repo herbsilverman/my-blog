@@ -6,19 +6,19 @@ background: '/img/bg-post.jpg'
 
 {% for post in paginator.posts %}
 
-<article class="post-preview">
-          <a href="{{ post.url | prepend: site.baseurl | replace: '//', '/' }}">
-            <h2 class="post-title">{{ post.title }}</h2>
-          </a>
-          <p class="post-meta">Posted by
-            {% if post.author %}
-            {{ post.author }}
-            {% else %}
-            {{ site.author }}
-            {% endif %}
-            on
-            {{ post.date | date: '%B %d, %Y' }} &middot; {% include read_time.html content=post.content %}            
-          </p>
+{% for post in site.posts %}
+  <div class="post-preview">
+    <a href="{{ post.url | relative_url }}">
+      <h2 class="post-title">{{ post.title }}</h2>
+      <h3 class="post-subtitle">{{ post.excerpt }}</h3>
+    </a>
+    <p class="post-meta">
+      By <strong>Herb Silverman</strong> • 
+      {{ post.content | number_of_words | divided_by: 200 | ceil }} min read • 
+      Category: <a href="{{ site.baseurl }}/category/{{ post.categories | first }}">{{ post.categories | first }}</a>
+    </p>
+  </div>
+{% endfor %}
           <div class="post-excerpt">
             <p>{{ post.excerpt }}</p>
               <a href="{{ post.url | relative_url }}" class="read-more">Read More »</a>
