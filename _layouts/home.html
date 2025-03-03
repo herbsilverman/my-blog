@@ -36,12 +36,6 @@ layout: default
           <a href="{{ post.url | prepend: site.baseurl | replace: '//', '/' }}">
             <h2 class="post-title">{{ post.title }}</h2>
             </a>
-            {% if post.subtitle %}
-            <p class="post-subtitle">{{ post.subtitle }}</p>
-            {% else %}
-            <p class="post-subtitle">{{ post.excerpt | strip_html | truncatewords: 40 }}</p>
-            {% endif %}
-         
           <p class="post-meta">Posted by
             {% if post.author %}
             {{ post.author }}
