@@ -35,8 +35,8 @@ layout: default
         <article class="post-preview">
           <a href="{{ post.url | prepend: site.baseurl | replace: '//', '/' }}">
             <h2 class="post-title">{{ post.title }}</h2>
-            </a>
-          <p class="post-meta">Posted by
+          </a>
+         <p class="post-meta">Posted by
             {% if post.author %}
             {{ post.author }}
             {% else %}
@@ -44,17 +44,18 @@ layout: default
             {% endif %}
             on
             {{ post.date | date: '%B %d, %Y' }} &middot; {% include read_time.html content=post.content %}            
-          <!-- Category Display -->
-            {% if page.categories %}
+          </p>
+
+            <!-- Category Display -->
+          {% if page.categories %}
             <p class="post-category">
             <strong>Category:</strong> 
             <a href="{{ site.baseurl }}/category/{{ page.categories | first | slugify }}/">
             {{ page.categories | first }}
             </a>
             </p>
-      </p>
-      {% endif %}
-
+          {% endif %}
+          
           <div class="post-excerpt">
             <p>{{ post.excerpt }}</p>
               <a href="{{ post.url | relative_url }}" class="read-more">Read More »</a>
