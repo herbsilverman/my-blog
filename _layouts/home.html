@@ -51,6 +51,10 @@ layout: default
             on
             {{ post.date | date: '%B %d, %Y' }} &middot; {% include read_time.html content=post.content %}            
           </p>
+          <div class="post-excerpt">
+            <p>{{ post.excerpt }}</p>
+              <a href="{{ post.url | relative_url }}" class="read-more">Read More »</a>
+          </div>
         </article>
 
         <hr>
