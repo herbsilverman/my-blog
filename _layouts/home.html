@@ -46,16 +46,6 @@ layout: default
             {{ post.date | date: '%B %d, %Y' }} &middot; {% include read_time.html content=post.content %}            
           </p>
 
-            <!-- Category Display -->
-          {% if page.categories %}
-            <p class="post-category">
-            <strong>Category:</strong> 
-            <a href="{{ site.baseurl }}/category/{{ page.categories | first | slugify }}/">
-            {{ page.categories | first }}
-            </a>
-            </p>
-          {% endif %}
-          
           <div class="post-excerpt">
             <p>{{ post.excerpt }}</p>
               <a href="{{ post.url | relative_url }}" class="read-more">Read More »</a>
