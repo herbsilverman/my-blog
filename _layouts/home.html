@@ -47,7 +47,7 @@ layout: default
 </p>
 
 <!-- Add Category Below -->
-<p class="post-category" style="font-size: 10px;">
+<p class="post-category" style="font-size: 14px;">
     Category: 
     {% for category in post.categories %}
         <a href="{{ site.baseurl }}/category/{{ category | slugify }}">{{ category }}</a>{% unless forloop.last %}, {% endunless %}
