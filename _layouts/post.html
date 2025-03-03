@@ -36,10 +36,10 @@ layout: default
 
       <!-- Category Display -->
       {% if page.categories %}
-      <p class="post-category">
+      <p class="post-category" style="font-size: 10px;">
         <strong>Category:</strong> 
         <a href="{{ site.baseurl }}/category/{{ page.categories | first | slugify }}/">
-          {{ page.categories | first }}
+        {{ page.categories | first }}
         </a>
       </p>
       {% endif %}
