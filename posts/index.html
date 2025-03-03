@@ -10,23 +10,23 @@ background: '/img/bg-post.jpg'
     <a href="{{ post.url | prepend: site.baseurl | replace: '//', '/' }}">
         <h2 class="post-title">{{ post.title }}</h2>
     </a>
-    <p class="post-meta">
-        Posted by
-        {% if post.author %}
-        {{ post.author }}
-        {% else %}
-        {{ site.author }}
-        {% endif %}
-        on
-        {{ post.date | date: '%B %d, %Y' }} &middot; {% include read_time.html content=post.content %}
-        {% if post.categories %}
-        &middot; Categories: 
-        {% for category in post.categories %}
-            <span class="post-category">{{ category }}</span>
-        {% endfor %}
-        {% endif %}
-    </p>
+    <p class="post-meta">Posted by
+    {% if post.author %}
+    {{ post.author }}
+    {% else %}
+    {{ site.author }}
+    {% endif %}
+    on
+    {{ post.date | date: '%B %d, %Y' }} &middot; {% include read_time.html content=post.content %}
+</p>
 
+<!-- Add Category Below -->
+<p class="post-category">
+    Category: 
+    {% for category in post.categories %}
+        <a href="{{ site.baseurl }}/category/{{ category | slugify }}">{{ category }}</a>{% unless forloop.last %}, {% endunless %}
+    {% endfor %}
+</p>
     <div class="post-excerpt">
         <p>{{ post.excerpt }}</p>
         <a href="{{ post.url | relative_url }}" class="read-more">Read More »</a>
