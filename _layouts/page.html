@@ -29,6 +29,16 @@ layout: default
 
         {{ content }}
 
+        <!-- Category Display -->
+        {% if page.categories %}
+        <p class="post-meta">
+          Categories:
+          {% for category in page.categories %}
+            <span class="post-category">{{ category }}</span>
+          {% endfor %}
+        </p>
+        {% endif %}
+
       </div>
     </div>
   </div>
