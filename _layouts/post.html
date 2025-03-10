@@ -32,21 +32,20 @@ layout: default
   <div class="row">
     <div class="col-lg-8 col-md-10 mx-auto">
 
+      <!-- Category Display -->
+      {% if page.categories %}
+      <p class="post-category" style="font-size: 14px; line-height: 1.2;">
+        <strong>Category:</strong> 
+        <a href="{{ site.baseurl }}/category/{{ page.categories | first | slugify }}/">
+          {{ page.categories | first }}
+        </a>
+      </p>
+      {% endif %}
+
       {{ content }}
 
-    <!-- Category Display -->
-{% if page.categories %}
-<p class="post-category" style="font-size: 14px; line-height: 1.2;">
-  <strong>Category:</strong> 
-  <a href="{{ site.baseurl }}/category/{{ page.categories | first | slugify }}/">
-    {{ page.categories | first }}
-  </a>
-</p>
-{% endif %}
-
-
       <hr>
-
+      
       <div class="clearfix">
 
         {% if page.previous.url %}
