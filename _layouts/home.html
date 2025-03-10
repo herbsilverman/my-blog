@@ -31,7 +31,14 @@ layout: default
         <!-- Home Post List -->
         {% for post in site.posts limit : 5 %}
 
-        <article class="post-preview">
+        <article <!-- Add Category Below -->
+<p class="post-category" style="font-size: 14px;">
+    Category: 
+    {% for category in post.categories %}
+        <a href="{{ site.baseurl }}/category/{{ category | slugify }}">{{ category }}</a>{% unless forloop.last %}, {% endunless %}
+    {% endfor %}
+</p>
+      <p class="post-preview">
           <a href="{{ post.url | prepend: site.baseurl | replace: '//', '/' }}">
             <h2 class="post-title">{{ post.title }}</h2>
           </a>
@@ -43,14 +50,6 @@ layout: default
     {% endif %}
     on
     {{ post.date | date: '%B %d, %Y' }} &middot; {% include read_time.html content=post.content %}
-</p>
-
-<!-- Add Category Below -->
-<p class="post-category" style="font-size: 14px;">
-    Category: 
-    {% for category in post.categories %}
-        <a href="{{ site.baseurl }}/category/{{ category | slugify }}">{{ category }}</a>{% unless forloop.last %}, {% endunless %}
-    {% endfor %}
 </p>
           
 <div class="post-excerpt">
