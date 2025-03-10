@@ -7,7 +7,7 @@ background: '/img/bg-post.jpg'
 {% for post in paginator.posts %}
 
 <article <!-- Add Category Below -->
-<p class="post-category" style="font-size: 14px;>
+<p class="post-category" style="font-size: 14px; line-height: 0.5;">
     Category: 
     {% for category in post.categories %}
         <a href="{{ site.baseurl }}/category/{{ category | slugify }}">{{ category }}</a>{% unless forloop.last %}, {% endunless %}
