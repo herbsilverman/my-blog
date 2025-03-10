@@ -4,10 +4,10 @@ layout: default
 
 <!-- Page Header -->
 {% if page.background %}
-<header class="masthead" style="background-image: url('{{ page.background | prepend: site.baseurl | replace: '//', '/' }}')">
-  {% else %}
-  <header class="masthead">
-    {% endif %}
+<header class="masthead" style="background-image: url('{{ page.background | prepend: site.baseurl | replace: '//', '/' }}'); min-height: 532px !important;">
+{% else %}
+<header class="masthead" style="min-height: 532px !important;">
+{% endif %}
     <div class="overlay"></div>
     <div class="container">
       <div class="row">
@@ -22,7 +22,6 @@ layout: default
               on {{ page.date | date: '%B %d, %Y' }} &middot; {% include read_time.html
               content=page.content %}
             </span>
-            {% if page.categories %}
           </div>
         </div>
       </div>
@@ -33,9 +32,11 @@ layout: default
   <div class="row">
     <div class="col-lg-8 col-md-10 mx-auto">
 
+      {{ content }}
+
       <!-- Category Display -->
       {% if page.categories %}
-      <p class="post-category" style="font-size: 14px;">
+      <p class="post-category">
         <strong>Category:</strong> 
         <a href="{{ site.baseurl }}/category/{{ page.categories | first | slugify }}/">
           {{ page.categories | first }}
@@ -43,10 +44,8 @@ layout: default
       </p>
       {% endif %}
 
-      {{ content }}
-
       <hr>
-      
+
       <div class="clearfix">
 
         {% if page.previous.url %}
