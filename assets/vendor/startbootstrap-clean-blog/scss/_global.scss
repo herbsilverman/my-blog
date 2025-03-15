@@ -81,11 +81,12 @@ blockquote {
 a {
     font-size: 1rem; /* 16px */
     text-decoration: none;
-    color: #0078d7;
+    color: #2637d0;
 }
 
 a:hover {
     text-decoration: underline;
+    color: $primary;
 }
 
 /* Strong (Bold) Text */
