@@ -32,7 +32,7 @@ layout: default
         {% for post in site.posts limit : 5 %}
 
         <article>
-      <p class="post-preview">
+      <p class="home-post">
           <a href="{{ post.url | prepend: site.baseurl | replace: '//', '/' }}">
             <h1 class="post-title">{{ post.title }}</h1>
           </a>
