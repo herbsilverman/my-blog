@@ -79,13 +79,13 @@ blockquote {
 
 /* Hyperlinks */
 a {
-    text-decoration: underline;
     color: $primary;
+    text-decoration: underline;
 }
 
 a:hover {
-    text-decoration: none;
     color: #1c1c1c;
+    text-decoration: none;
 }
 
 /* Strong (Bold) Text */
