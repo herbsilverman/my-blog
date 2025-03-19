@@ -79,12 +79,12 @@ blockquote {
 
 /* Hyperlinks */
 a {
-    color: $primary;
-    text-decoration: underline;
+    color: #1c1c1c;
+    text-decoration: none;
 }
 
 a:hover {
-    color: #1c1c1c;
+    color: $primary;
     text-decoration: underline;
 }
 
