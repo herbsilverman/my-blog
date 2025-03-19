@@ -136,3 +136,14 @@ img::-moz-selection {
     color: $white;
     background: transparent;
 }
+
+.home-post {
+    a {
+    color: #1c1c1c;
+    text-decoration: none;
+}
+
+    a:hover {
+    color: #primary;
+    text-decoration: underline;
+}
