@@ -86,6 +86,7 @@ a {
 
 a:hover {
     color: $primary;
+    background-color: darken($primary, 7.5) !important;
     text-decoration: underline;
 }
 
