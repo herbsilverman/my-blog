@@ -1,5 +1,6 @@
 @mixin clearfix() {
   &::after {
+    color: #1c1c1c;
     display: block;
     clear: both;
     content: "";
