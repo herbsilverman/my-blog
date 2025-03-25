@@ -29,6 +29,7 @@ layout: default
     {% if page.categories %}
       <li class="breadcrumb-item"><a href="{{ "/category/" | relative_url }}{{ page.categories | first | slugify }}">{{ page.categories | first }}</a></li>
     {% endif %}
+    <li class="breadcrumb-item active" aria-current="page">{{ page.title }}</li>
   </ol>
 </nav>
 
