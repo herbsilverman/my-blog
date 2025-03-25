@@ -28,6 +28,17 @@ layout: default
     </div>
   </header>
 
+<nav aria-label="breadcrumb">
+  <ol class="breadcrumb">
+    <li class="breadcrumb-item"><a href="{{ "/" | relative_url }}">Home</a></li>
+    <li class="breadcrumb-item"><a href="{{ "/blog" | relative_url }}">Blog</a></li>
+    {% if page.categories %}
+      <li class="breadcrumb-item"><a href="{{ "/category/" | relative_url }}{{ page.categories | first | slugify }}">{{ page.categories | first }}</a></li>
+    {% endif %}
+    <li class="breadcrumb-item active" aria-current="page">{{ page.title }}</li>
+  </ol>
+</nav>
+
 <div class="container">
   <div class="row">
     <div class="col-lg-8 col-md-10 mx-auto">
